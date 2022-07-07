@@ -2,14 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    padding: 50px 200px;
 }
 
 h1 {
     color: pink;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .float-left {
-    float: left;
+    background-color: black;
+    display: table-cell;
+    /* float: left; */
+    vertical-align: middle;
+
+
 }
 
 .float-right {
@@ -21,9 +34,37 @@ main>div {
     border: 2px solid blue;
 }
 
+.container {
+    border: 1px solid red;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-height: 100%;
+    max-width: 100%;
+    /* padding-left: 50%;
+    padding-right: 50%; */
+}
 
-.clearfix::after {
+/* .clearfix::after {
     content: "";
     display: table;
     clear: both;
+} */
+
+img {
+    height: 100px;
+}
+
+h2 {
+    font-size: larger;
+    font-weight: 700;
+    color: white;
+
+}
+
+h4 {
+    color: white;
+}
+
+.float-left>p {
+    color: white;
 }
