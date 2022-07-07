@@ -1,15 +1,26 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 h1 {
     color: pink;
 }
 
-.float.left {
+.float-left {
     float: left;
 }
+
+.float-right {
+    float: right;
+}
+
+main>div {
+    margin-bottom: 25px;
+    border: 2px solid blue;
+}
+
 
 .clearfix::after {
     content: "";
