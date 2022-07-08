@@ -2,56 +2,61 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Roboto Condensed', sans-serif;
 }
 
 body {
-    height: 1200px;
-    width: 1100px;
-
+    font-family: 'Fredoka One', sans-serif;
+    font-weight: 400;
 }
+
+
 
 h1 {
+    padding: 50px;
+    color: #e53170;
+    font-weight: 700;
     text-align: center;
-    padding-top: 30px;
-    color: rgb(204, 61, 61);
-    font-weight: bolder;
+
 }
 
-#lorem {
-    font-size: 14px;
-    margin-left: 40px;
+p {
+    margin-bottom: 30px;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
 }
 
 .container {
-    background-color: black;
-    width: 300px;
-    height: 100px;
-    display: inline-block;
-    margin-left: 40px;
-    margin-top: 20px;
-
-
+    margin: 0 auto;
+    max-width: 1200px;
+    margin: 30px;
 }
 
-img {
+.cards {}
+
+.card {
+    width: calc(100%/3 - 20px);
+    background-color: black;
+    color: white;
+    box-shadow: 0px 0px 20px rgb(71, 71, 71);
+    float: left;
+    margin: 10px 10px;
+}
+
+.card img {
     height: 100px;
     width: 100px;
+    float: left;
 }
 
-.info {
-    color: white;
-    float: right;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 20px;
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
 
+.card a {
+    color: aqua;
+}
 
-
-
+.card .info {
+    padding: 10px;
 }
